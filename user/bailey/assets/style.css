@@ -1,0 +1,154 @@
+body, html{
+  font-family: 'Noto-Sans', sans-serif;
+  background: #161616;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face{
+  font-family: 'Noto-Sans';
+  font-style: normal;
+  src: url(notosans-regular.woff2);
+  font-display: block;
+  font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Font Awesome 5 Brands';
+	font-style: normal;
+	font-weight: 400;
+	font-display: block;
+	src: url('icons.woff2')
+}
+
+.fab {
+	font-family: 'Font Awesome 5 Brands';
+	font-weight: 400;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	display: inline-block;
+	font-style: normal;
+	font-variant: normal;
+	text-rendering: auto;
+	line-height: 1;
+}
+
+.fa-discord:before { content: "\f392"; } .fa-github:before  { content: "\f09b"; }
+
+.container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 55px;
+}
+
+.container h1{
+  font-size: 35px;
+}
+
+.container h2{
+  margin-top: -25px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.logo{
+  object-fit: cover;
+  border-style: solid;
+  border: 0px;
+  border-radius: 30px;
+}
+
+section{
+  text-align: center;
+  width: clamp(300px, 90%, 800px);
+}
+
+section h3{
+  text-align: center;
+  font-size: 28px;
+}
+
+section h4{
+  list-style: none;
+  font-size: 18px;
+  margin-top: -25px;
+}
+
+p{
+  color: #999797;
+  font-size: 16px;
+}
+
+.p2{
+  color: #999797;
+  font-size: 16px;
+  margin-top: -20px;
+}
+
+.buttonflex{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+a{
+  color: #2b2bb1;
+  text-decoration: none;
+}
+
+a:hover{
+  transition: .15s;
+  filter: brightness(75%);
+}
+
+a:active{
+  transition: .15s;
+  filter: brightness(50%);
+}
+
+.button{
+  padding: 15px;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 530;
+}
+
+.discord{
+  margin-right: 15px;
+  background-color: #4E5D94;
+}
+
+.github{
+  background-color: #238637;
+}
+
+.imggrid{
+  width: 75%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}  
+
+.imggrid img{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.imggrid div:hover{
+  transition: .2s;
+  filter: brightness(75%);
+}
+
+.imggrid div:active{
+  transition: .2s;
+  filter: brightness(50%);
+}
