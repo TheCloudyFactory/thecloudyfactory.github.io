@@ -152,3 +152,11 @@ a:active{
   transition: .2s;
   filter: brightness(50%);
 }
+.center {
+  text-align: center;
+  margin: auto;
+  margin-top: 30px;
+  width: 50%;
+  border: 3px solid rgb(255, 255, 255);
+  padding: 10px;
+}
