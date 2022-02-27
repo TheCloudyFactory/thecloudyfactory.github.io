@@ -1,7 +1,6 @@
 body, html{
   font-family: 'Noto-Sans', sans-serif;
   color: white;
-  background: #242424;
   background: linear-gradient(31deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); 
   background-size: cover;
   background-repeat: no-repeat;
