@@ -1,7 +1,13 @@
 body, html{
   font-family: 'Noto-Sans', sans-serif;
-  background: #161616;
   color: white;
+  background: #242424;
+  background: linear-gradient(31deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
   margin: 0;
   padding: 0;
 }
@@ -9,7 +15,7 @@ body, html{
 @font-face{
   font-family: 'Noto-Sans';
   font-style: normal;
-  src: url(notosans-regular.woff2);
+  src: url(../assets/notosans-regular.woff2);
   font-display: block;
   font-weight: 400;
 }
@@ -19,7 +25,69 @@ body, html{
 	font-style: normal;
 	font-weight: 400;
 	font-display: block;
-	src: url('icons.woff2')
+	src: url('../assets/icons.woff2')
+}
+
+#movable{
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+   margin: 0;
+  border-radius: 13px;
+  background: rgb(255, 255, 255, .8);
+  box-shadow: 2px 2px 11px 1px rgb(0 0 0 / 58%);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  width: 95%;
+  max-width: 600px;
+  position: absolute;
+  perspective: 300px;
+}
+
+img{
+  border-radius: 50%;
+  background: #232323;
+  box-shadow: 1px -1px 13px -4px #000;
+}
+
+.ico{
+  font-size: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 15px;
+  background: rgb(255, 255, 255, .4);
+  padding: 10px;
+  border-radius: 13px;
+}
+
+.ico:hover{
+  filter: brightness(80%);
+  box-shadow: 1px -1px 13px -4px #000;
+  transition: .15s ease-in-out;
+  transform: scale(1.10);
+}
+
+.ico:active{
+  filter: brightness(50%);
+  transition: .15s ease-in-out;
+  -webkit-transform: scale(.90);
+  -ms-transform: scale(.90);
+  transform: scale(.90);
+  box-shadow: 1px -1px 13px -4px #000;
+}
+
+@media (prefers-color-scheme: dark) {
+  .ico{
+    background: rgb(0, 0, 0, .4);
+  }
+  h1, p{
+    color: rgb(255, 255, 255, 0.85);
+  }
+  #movable{
+    background: rgb(28, 28, 30, .8)
+  }
 }
 
 .fab {
@@ -34,7 +102,7 @@ body, html{
 	line-height: 1;
 }
 
-.fa-discord:before { content: "\f392"; } .fa-github:before  { content: "\f09b"; }
+.fa-discord:before { content: "\f392"; } .fa-github:before  { content: "\f09b"; } .fa-twitter:before { content: "\f099"; }
 
 .container{
   display: flex;
